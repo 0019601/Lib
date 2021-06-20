@@ -2147,7 +2147,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+						{BackgroundColor3 = Color3.fromRGB(20,20,20)}
 					):Play()
 				end)
 
@@ -2492,7 +2492,7 @@ function DiscordLib:Window(text)
 				Seperator2.Size = UDim2.new(0, 401, 0, 1)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			function ChannelContent:Dropdown(text, list, callback)
+			function ChannelContent:Drop(text, list, callback)
 				local DropFunc = {}
 				local itemcount = 0
 				local framesize = 0
